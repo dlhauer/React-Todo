@@ -2,10 +2,13 @@ import React from 'react';
 
 class Todo extends React.Component {
 
+  constructor(props) {
+    super(props);
+  }
 
   render() {
     return (
-      <h1>Wow!</h1>
+      <p>{this.props.todo.task}</p>
     );
   }
 }

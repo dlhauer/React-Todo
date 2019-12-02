@@ -5,10 +5,17 @@ import Todo from './Todo';
 
 class TodoList extends React.Component {
 
+  constructor(props) {
+    super(props);
+  }
 
   render() {
     return (
-      <h1>Hi!</h1>
+      <div className='todo-list'>
+        {this.props.todos.map( (todo, index) => (
+          <Todo key={index} todo={todo}/>
+        ))}
+      </div>
     );
   }
 }
