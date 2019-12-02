@@ -2,6 +2,7 @@
 // feel free to change this component.js into TodoList.js
 import React from 'react';
 import Todo from './Todo';
+import './Todo.css';
 
 class TodoList extends React.Component {
 
@@ -15,6 +16,7 @@ class TodoList extends React.Component {
         {this.props.todos.map( (todo, index) => (
           <Todo key={index} todo={todo}/>
         ))}
+        <button className='clear-btn' onClick={this.props.clearCompleted}>Clear completed</button>
       </div>
     );
   }

@@ -2,6 +2,8 @@ import React from 'react';
 import TodoForm from './components/TodoComponents/TodoForm';
 import TodoList from './components/TodoComponents/TodoList';
 
+import './components/TodoComponents/Todo.css';
+
 const todos = [
   {
     task: 'Call wife',
