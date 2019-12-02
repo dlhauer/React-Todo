@@ -22,7 +22,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      todos: todos,
+      todos: todos
     }
   }
 
@@ -34,7 +34,7 @@ class App extends React.Component {
     }
 
     this.setState({
-      todos: [...todos, newTodo]
+      todos: [...this.state.todos, newTodo]
     });
   }
 
